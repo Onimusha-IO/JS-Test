@@ -1,0 +1,37 @@
+body {
+  width: 100vh;
+  height: 100vh;
+  margin: 0;
+  font-family: "poppins", "Helvetica", "sans-serif";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+form {
+  position: relative;
+}
+
+input {
+  border-radius: 5px;
+  border-width: 1px;
+  font-family: "poppins", "Helvetica", "sans-serif";
+  font-size: 1.5rem;
+  height: 48px;
+  padding: 5px;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  padding-left: 6px;
+  margin-top: 1rem;
+  transform-origin: 6px;
+  transition: transform 0.4s ease-in-out;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  transform: translateY(-1.2rem) scale(0.5);
+}
